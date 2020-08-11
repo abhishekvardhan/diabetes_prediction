@@ -1,0 +1,55 @@
+h1 {
+    text-transform: capitalize;
+  background-color:grey;
+  font: Times;
+  height:70px;
+  font-size:60px;
+  margin:-40px -40px;
+}
+
+ body {
+ background-image: url("https://image.shutterstock.com/image-photo/medical-doctor-pressing-diabetes-button-260nw-436708900.jpg");
+ background-color:black;
+ background-size: auto;
+ color:white;
+  background-repeat: no-repeat;
+   background-size: cover;
+   margin:50px;
+}
+h2{
+  color:#000000;
+  margin:10px -20px 0px;
+  font-size:35px;
+}
+select{
+  color:red;}
+label{
+  font-family: arial;
+  
+}
+span {
+  display: block;
+  width: %;
+  height:35px;
+  font-size:20px;
+}
+p{
+   font-size:20px;
+}
+footer a{
+  display: inline-block;
+  width: 4%;
+  height:45px;
+}
+#button1 {
+  margin: 20px,20px,20px,100px;
+  font-family: Times;
+  background: white;
+  border-radius: 6px;
+}
+p{
+  color:grey;
+}
+label{
+  color:grey;
+}

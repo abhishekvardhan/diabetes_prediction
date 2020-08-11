@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <script src="https://kit.fontawesome.com/4a975fa749.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/mycss.css') }}">
+   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+  <title>Diabeties predictor</title>
+</head>
+  <body>
+  <h1 style="text-align:center">Diabeties predictor</h1>
+   <br>
+    <br>
+    <h2>About</h2>
+  <p>This project is used to predict wheather a person is diabatic or not.</p>
+ <h2>Options</h2><span>
+  <form action="{{ url_for('predict')}}"method="post">
+
+  <label for="Pregnancies">Pregnancies:</label>
+  <input type="text" id="Pregnancies" name="Pregnancies"><br><br>
+
+  <label for="Glucose">Glucose:</label>
+  <input type="text" id="Glucose" name="Glucose"><br><br>
+  
+  <label for="BloodPressure">Blood Pressure:</label>
+  <input type="text" id="BloodPressure" name="BloodPressure"><br><br>
+  
+  <label for="SkinThickness">Skin Thickness:</label>
+  <input type="text" id="SkinThickness" name="SkinThickness"><br><br>
+  
+  <label for="Insulin">Insulin:</label>
+  <input type="text" id="Insulin" name="Insulin"><br><br>
+  
+  <label for="BMI">BMI:</label>
+  <input type="text" id="BMI" name="BMI"><br><br>
+  
+  <label for="DiabetesPedigreeFunction">Diabetes Pedigree Function:</label>
+  <input type="text" id="DiabetesPedigreeFunction" name="DiabetesPedigreeFunction"><br><br>
+  
+  <label for="Age">Age:</label>
+  <input type="text" id="Age" name="Age"><br><br>
+  
+  
+  
+  <br>
+    <button type="submit" id="button1" >Predict</button> 
+       </form><h2 style="color: white">
+         {{ prediction_text }}    </h2>      
+</body>
+  <hr>
+  <footer>
+  <a href="https://www.kaggle.com/abhishekvardhan" title="kaggle" target="__blank"><i class="fab fa-kaggle fa-2x"  ></i></a>
+  <a href="https://github.com/abhishekvardhan" target="__blank" title="Github"><i class="fab fa-github fa-2x"  ></i></a>
+  <a href="https://www.hackerrank.com/abhivsp10" target="__blank" title="Hackerrank"><i class="fab fa-hackerrank fa-2x"  ></i></a><br>
+  <a href="https://github.com/abhishekvardhan/random-walk"></a>
+  <address>
+    flat no: 301,Shivaji Nagar<br>
+    Krmannapalem,Visakhapatnam<br>
+    Andhra Pradesh
+  </address>
+</footer>
+</html>
