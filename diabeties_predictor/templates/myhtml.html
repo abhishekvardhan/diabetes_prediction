@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
    <script src="https://kit.fontawesome.com/4a975fa749.js" crossorigin="anonymous"></script>
@@ -16,32 +16,33 @@
     <br>
     <h2>About</h2>
   <p>This project is used to predict wheather a person is diabatic or not.</p>
- <h2>Options</h2><span>
+ <h2>Patient details </h2><span>
   <form action="{{ url_for('predict')}}"method="post">
 
   <label for="Pregnancies">Pregnancies:</label>
-  <input type="text" id="Pregnancies" name="Pregnancies"><br><br>
+  <input type="text" id="Pregnancies" name="Pregnancies">   &nbsp range(0~20)<br><br>
 
-  <label for="Glucose">Glucose:</label>
-  <input type="text" id="Glucose" name="Glucose"><br><br>
+  <label for="Glucose">Glucose (mg/dl):</label>
+  <input type="text" id="Glucose" name="Glucose"> range(30~700)<br><br>
   
-  <label for="BloodPressure">Blood Pressure:</label>
-  <input type="text" id="BloodPressure" name="BloodPressure"><br><br>
+  <label for="BloodPressure">Blood Pressure (diastolic)  (mmHg):</label>
+  <input type="text" id="BloodPressure" name="BloodPressure">  &nbsp range(40~150)<br><br>
   
-  <label for="SkinThickness">Skin Thickness:</label>
-  <input type="text" id="SkinThickness" name="SkinThickness"><br><br>
+  <label for="SkinThickness">Skin Thickness (mm):</label>
+  <input type="text" id="SkinThickness" name="SkinThickness"> &nbsp range(0~100)<br><br>
   
-  <label for="Insulin">Insulin:</label>
-  <input type="text" id="Insulin" name="Insulin"><br><br>
+  <label for="Insulin">Insulin  (mU/ml):</label>
+  <input type="text" id="Insulin" name="Insulin"> &nbsp range(0~500)<br><br>
   
-  <label for="BMI">BMI:</label>
-  <input type="text" id="BMI" name="BMI"><br><br>
+  <label for="BMI">BMI  (weight in kg/(height in m)^2):</label>
+  <input type="text" id="BMI" name="BMI"> &nbsp range(15~60)<br><br>
   
-  <label for="DiabetesPedigreeFunction">Diabetes Pedigree Function:</label>
-  <input type="text" id="DiabetesPedigreeFunction" name="DiabetesPedigreeFunction"><br><br>
+  <label for="Diabetes Pedigree Function">Diabetes Pedigree Function:</label>
+  <input type="text" id="DiabetesPedigreeFunction" name="DiabetesPedigreeFunction">  &nbsprange(0.08~2.47)<br><br>
   
   <label for="Age">Age:</label>
-  <input type="text" id="Age" name="Age"><br><br>
+  <input type="text" id="Age" name="Age">  &nbsp range(5~120)<br><br>
+  
   
   
   
@@ -52,14 +53,10 @@
 </body>
   <hr>
   <footer>
-  <a href="https://www.kaggle.com/abhishekvardhan" title="kaggle" target="__blank"><i class="fab fa-kaggle fa-2x"  ></i></a>
+  <a href="https://www.kaggle.com/abhishekvardhan" title="kaggle" target="__blank"><i class="fab fa-kaggle fa-2x"  ></i></a> 
   <a href="https://github.com/abhishekvardhan" target="__blank" title="Github"><i class="fab fa-github fa-2x"  ></i></a>
   <a href="https://www.hackerrank.com/abhivsp10" target="__blank" title="Hackerrank"><i class="fab fa-hackerrank fa-2x"  ></i></a><br>
   <a href="https://github.com/abhishekvardhan/random-walk"></a>
-  <address>
-    flat no: 301,Shivaji Nagar<br>
-    Krmannapalem,Visakhapatnam<br>
-    Andhra Pradesh
-  </address>
+
 </footer>
 </html>
